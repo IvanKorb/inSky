@@ -25,7 +25,7 @@ public class MainController {
     @Autowired
     private MessageRepo messageRepo;
 
-    @Value("$(upload.path")
+    @Value("${upload.path}")
     private String uploadPath;
 
     @GetMapping("/")
@@ -66,8 +66,10 @@ public class MainController {
                 uploadDir.mkdir();
             }
 
-            String uuidFile = UUID.randomUUID().toString();
-            String resultFilename = uuidFile + "." + file.getOriginalFilename();
+           // String uuidFile = UUID.randomUUID().toString();
+            //String resultFilename = uuidFile + "." + file.getOriginalFilename();
+
+            String resultFilename = file.getOriginalFilename();
 
             file.transferTo(new File(uploadPath + "/" + resultFilename));
 

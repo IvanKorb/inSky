@@ -1,6 +1,8 @@
 package com.example.inSky.domain;
 
 import javax.persistence.*;
+import java.sql.Date;
+import java.sql.Time;
 
 @Entity
 public class Message {
@@ -10,6 +12,15 @@ public class Message {
 
     private String text;
     private String tag;
+    private Date dateTime;
+
+    public Date getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(Date dateTime) {
+        this.dateTime = dateTime;
+    }
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -32,6 +43,7 @@ public class Message {
         this.text = text;
         this.tag = tag;
         this.author = user;
+
     }
     public String getAuthorName(){
         return author != null ? author.getUsername() : "<none>";

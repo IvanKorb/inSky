@@ -3,20 +3,22 @@
 <@c.page>
     List of users
 
-<table>
-    <thead>
+<table class="table table-hover">
+    <thead class="thead-dark">
     <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th></th>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Role</th>
+        <th scope="col">Edit</th>
     </tr>
     </thead>
     <tbody>
     <#list users as user>
     <tr>
-        <td>${user.username}</td>
-        <td><#list user.roles as role>${role}<#sep>, </#list></td>
-        <td><a href="/user/${user.id}">edit</a></td>
+        <td scope="row">#{user.id}</td>
+        <td scope="row">${user.username}</td>
+        <td scope="row"><#list user.roles as role>${role}<#sep>, </#list></td>
+        <td scope="row"><a href="/user/${user.id}">edit</a></td>
     </tr>
     </#list>
     </tbody>
