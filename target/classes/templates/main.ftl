@@ -67,8 +67,13 @@
                   <#else>
                   No information
           </#if></td>
-          <td scope="row">Time download</td>
-          <td><a href="/user/${message.id}">edit</a> <a href="/user/${message.id}">download</a> <a href="/user/${message.id}">delete</a></td>
+          <td scope="row">
+               <#if message.dateTime??>
+              ${message.dateTime}
+               <#else>
+               dowload time
+               </#if></td>
+          <td><a href="/message/${message.id}">edit</a> <a href="/message/${message.id}/download">download</a> <a href="/message/${message.id}/delete">delete</a></td>
       </tr>
     <#else >
 No messages

@@ -43,6 +43,7 @@ public class Message {
         this.text = text;
         this.tag = tag;
         this.author = user;
+        this.dateTime = new Date(System.currentTimeMillis());
 
     }
     public String getAuthorName(){
