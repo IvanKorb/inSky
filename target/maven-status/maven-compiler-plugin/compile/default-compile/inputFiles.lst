@@ -1,12 +1,15 @@
-C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\config\MvcConfig.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\service\UserService.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\controller\UserController.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\repos\UserRepo.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\repos\MessageRepo.java
+C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\Application.java
+C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\service\MailSender.java
+C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\config\MvcConfig.java
+C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\config\MailConfig.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\controller\RegistrationController.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\controller\MainController.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\domain\Role.java
-C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\Application.java
+C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\controller\MessageController.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\config\WebSecurityConfig.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\domain\Message.java
 C:\Users\kor_i\IdeaProjects\inSky\src\main\java\com\example\inSky\domain\User.java

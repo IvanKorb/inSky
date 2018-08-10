@@ -1,15 +1,15 @@
 <#import  "parts/common.ftl" as c>
 
 <@c.page>
-    List of users
+    Список пользователей
 
 <table class="table table-hover">
     <thead class="thead-dark">
     <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Role</th>
-        <th scope="col">Edit</th>
+        <th scope="col">№ Id</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Роль</th>
+        <th scope="col">Действие</th>
     </tr>
     </thead>
     <tbody>

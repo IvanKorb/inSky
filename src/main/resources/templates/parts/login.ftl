@@ -1,23 +1,24 @@
+<#include  "security.ftl">
 <#macro login path isRegisterForm>
 <form action="${path}" method="post">
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">User Name :</label>
+        <label class="col-sm-2 col-form-label">Имя пользователя:</label>
         <div class="col-sm-6">
-            <input type="text" name="username" class="form-control" placeholder="User name" />
+            <input type="text" name="username" class="form-control" placeholder="Имя пользователя" />
         </div>
     </div>
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Password:</label>
+        <label class="col-sm-2 col-form-label">Пароль:</label>
         <div class="col-sm-6">
-            <input type="password" name="password" class="form-control" placeholder="Password" />
+            <input type="password" name="password" class="form-control" placeholder="Пароль" />
         </div>
     </div>
 
     <#if isRegisterForm>
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Email:</label>
+        <label class="col-sm-2 col-form-label">E-mail:</label>
         <div class="col-sm-6">
-            <input type="email" name="email" class="form-control" placeholder="email" />
+            <input type="email" name="email" class="form-control" placeholder="e-mail" />
         </div>
     </div>
     </#if>
@@ -25,16 +26,19 @@
     <input type="hidden" name="_csrf" value="${_csrf.token}"/>
 
      <#if !isRegisterForm>
-         <a href="/registration">Add new user</a>
+         <a href="/registration">Регистрация</a>
      </#if>
 
-    <button class="btn btn-primary" type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
+    <button class="btn btn-primary" type="submit"><#if isRegisterForm>Create<#else>Войти</#if></button>
 </form>
 </#macro>
 
 <#macro logout>
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-    <button class="btn btn-primary" type="submit" >Sign out</button>
+
+    <button class="btn btn-primary" type="submit" >Кнопка входа</button>
+
+
 </form>
 </#macro>
